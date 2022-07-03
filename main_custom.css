@@ -2656,70 +2656,24 @@ input[type="checkbox"]:checked + .slider2:before {
   z-index: -1;
 }
 
-#bottomLeftHolder #healthValueHolder {
-  right: 0;
-  display: block;
-  background-color: transparent;
-  border-radius: 0;
-  padding: 0;
-  margin-bottom: 18px;
-  padding-right: 20px;
-  position: absolute;
-  bottom: 0;
-  letter-spacing: 0.1rem;
+#healthValueHolder {
+	background-color: var(--transp);
+	width: 75px;
+	height: 65px;
+	etter-spacing: 1px;
+	position: fixed;
+	left: 40%;
+	bottom: 10%;
+	margin-bottom: 10%;
+	align-items: center
 }
-
-#bottomLeftHolder #healthValueHolder #healthValue {
-  font-family: var(--mainFont);
-  font-size: 45px;
-  color: var(--c_white);
-}
-
-#bottomLeftHolder #healthValueHolder #healthValue span {
-  font-family: var(--subFont);
-  font-size: 20px;
-  color: var(--c_whiteST);
-  opacity: 0.7;
-}
-
-#bottomLeftHolder #healthValueHolder #challIcon {
-  display: none;
-}
-
-#healthBar {
-  position: relative;
-  z-index: 69;
-  height: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 99%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-transform: translateX(-1px);
-          transform: translateX(-1px);
-}
-
-#healthBar .healthBarSeg {
-  width: 100%;
-  -webkit-transform: unset;
-          transform: unset;
-  -webkit-transition: all 280ms;
-  transition: all 280ms;
-  margin-right: 0px;
-  background: transparent;
-}
-
-#healthBar .healthBarSeg:not(:last-child) .hpBSeg {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-#healthBar .healthBarSeg:not(:first-child) .hpBSeg {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+#healthValue {
+	font-size: 40px;
+	text-align: center;
+	color: var(--white);
+	margin-top: 0;
+	will-change: unset;
+	text-shadow: var(--outline)
 }
 
 #teamName {
